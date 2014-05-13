@@ -1,3 +1,7 @@
 /.kitchen/
 
 /deploy/key.pem
+
+/.bundle/
+
+/tmp/

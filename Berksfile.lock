@@ -1,0 +1,7 @@
+DEPENDENCIES
+  odi-nginx
+    path: .
+    metadata: true
+
+GRAPH
+  odi-nginx (0.4.0)
