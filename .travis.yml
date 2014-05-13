@@ -3,6 +3,8 @@ rvm:
 - 2.1.2
 script:
 - bundle exec rake
+before_script:
+- ssh-keygen -f ~/.ssh/id_rsa -t rsa -N ''
 after_success:
 - openssl enc -d -aes-256-cbc -k $CHEF_KEY -in deploy/key.enc -out deploy/key.pem
 - chmod 600 deploy/key.pem
