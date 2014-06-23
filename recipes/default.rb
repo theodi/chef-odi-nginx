@@ -39,6 +39,14 @@ end
   end
 end
 
+template '/etc/nginx/nginx.conf' do
+  source "nginx.conf.erb"
+  mode 0440
+  owner "root"
+  group "root"
+  notifies :reload, "service[nginx]", :delayed
+end
+
 service 'nginx' do
   supports :status => true, :restart => true, :reload => true
   action :enable
