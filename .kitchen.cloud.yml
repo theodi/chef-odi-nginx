@@ -7,13 +7,12 @@ driver:
   require_chef_omnibus: latest
   wait_for: 1200
   server_name: chef-odi-nginx-test
-  image_id: bb02b1a3-bc77-4d17-ab5b-421d89850fca
 
 provisioner:
   name: chef_zero
 
 platforms:
-  - name: ubuntu-14.04
+  - name: ubuntu-12.04
 
 suites:
   - name: odi-nginx
