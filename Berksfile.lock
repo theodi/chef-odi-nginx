@@ -4,4 +4,6 @@ DEPENDENCIES
     metadata: true
 
 GRAPH
-  odi-nginx (0.4.0)
+  apt (2.4.0)
+  odi-nginx (0.5.0)
+    apt (>= 0.0.0)
